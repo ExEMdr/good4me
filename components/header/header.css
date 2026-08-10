@@ -1,0 +1,42 @@
+.header {
+
+}
+
+.header__wrapper {
+    padding: 0px 100px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__nav-item {
+}
+
+.header__nav-link {
+font-family: jostRegular;
+font-size: 18px;
+text-align: left;
+}
+
+.header__search {
+    display: flex;
+    gap: 26px;
+}
+
+.active:hover {
+    color: #F6623E;
+}

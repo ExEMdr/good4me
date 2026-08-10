@@ -1,0 +1,24 @@
+@font-face {
+    font-family: jostBold;
+    src: url('../fonts/Jost-Bold.woff2');
+}
+@font-face {
+    font-family: jostMedium;
+    src: url('../fonts/Jost-Medium.woff2');
+}
+@font-face {
+    font-family: jostRegular;
+    src: url('../fonts/Jost-Regular.woff2');
+}
+@font-face {
+    font-family: jostSemiBold;
+    src: url('../fonts/Jost-SemiBold.woff2');
+}
+@font-face {
+    font-family: montserratBold;
+    src: url('../fonts/Montserrat-Bold.woff2');
+}
+@font-face {
+    font-family: workSansMedium;
+    src: url('../fonts/WorkSans-Medium.woff2');
+}
