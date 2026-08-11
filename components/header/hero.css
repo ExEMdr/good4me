@@ -1,0 +1,65 @@
+.hero {
+    border-radius: 0px 0px 200px 200px;
+background: #FFF8F6;
+min-height: 80vh;
+margin-bottom: 100px;
+
+}
+
+.hero__wrapper {
+    padding: 208px 30px 208px 62px;
+}
+
+.hero__inner {
+    display: flex;
+gap: 42px;
+justify-content: space-between;
+}
+
+.hero__inner-block-text {
+}
+
+.vitamin {
+
+}
+
+.hero__inner-block-text-subtitle {
+    color: #F6623E;
+font-family: jostSemiBold;
+font-size: 26px;
+text-align: left;
+margin-bottom: 4px;
+}
+
+.hero__inner-block-text-title {
+    color: #000000;
+
+font-family: jostSemiBold;
+font-size: 66px;
+line-height: 92px;
+text-align: left;
+margin-bottom: 60px;
+width: 644px;
+}
+
+.hero__inner-block-text-description {
+    color: #454545;
+
+font-family: jostRegular;
+font-size: 20px;
+line-height: 29px;
+text-align: left;
+margin-bottom: 30px;
+width: 100%;
+max-width: 580px;
+}
+
+.hero__inner-block-text-link {
+    color: #FFFFFF;
+    background: #F6623E;
+    padding: 14px 30px;
+font-family: jostMedium;
+font-size: 16px;
+text-align: left;
+text-transform: uppercase;
+}

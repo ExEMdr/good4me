@@ -1,38 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Good4Me</title>
-    <link rel="stylesheet" href="./components/style.css">
-    <link rel="stylesheet" href="./components/fonts.css">
-    <link rel="stylesheet" href="./components/header/header.css">
-</head>
-<body>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./components/style.css" />
+    <link rel="stylesheet" href="./components/fonts.css" />
+    <link rel="stylesheet" href="./components/header/header.css" />
+    <link rel="stylesheet" href="./components/header/hero.css" />
+    <link rel="stylesheet" href="./components/main/process.css" />
+  </head>
+  <body>
     <!-- ! HEADER -->
-     <div class="container">
-        <header class="header">
-            <div class="header__wrapper">
-                <div class="header__inner">
-                    <a href="./index.html"><img src="./images/svg/logo.svg" alt="Good4Me"></a>
-                    <nav class="header__nav">
-                        <ul class="header__nav-list">
-                            <li class="header__nav-item"><a href="#" class="header__nav-link active">HOME</a></li>
-                            <li class="header__nav-item"><a href="#" class="header__nav-link active">SHOP</a></li>
-                            <li class="header__nav-item"><a href="#" class="header__nav-link active">FAQ'S</a></li>
-                            <li class="header__nav-item"><a href="#" class="header__nav-link active">STOCKISTS</a></li>
-                            <li class="header__nav-item"><a href="#" class="header__nav-link active">WHOLESALE</a></li>
-                            <li class="header__nav-item"><a href="#" class="header__nav-link active">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header__search">
-                        <a href="#"><img src="./images/svg/loupe.svg" alt="Search"></a>
-                        <a href="#"><img src="./images/svg/human.svg" alt="Account"></a>
-                        <a href="#"><img src="./images/svg/shop.svg" alt="Shop"></a>
-                    </div>
-                </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__inner">
+            <a href="./index.html"
+              ><img src="./images/svg/logo.svg" alt="Good4Me"
+            /></a>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link active">HOME</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link active">SHOP</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link active">FAQ'S</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link active">STOCKISTS</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link active">WHOLESALE</a>
+                </li>
+                <li class="header__nav-item">
+                  <a href="#" class="header__nav-link active">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__search">
+              <div class="search__wrapper">
+                <input
+                  type="text"
+                  class="search__input"
+                  placeholder="Search..."
+                />
+
+                <button type="button" class="search__button">
+                  <img src="./images/svg/loupe.svg" alt="Search" />
+                </button>
+              </div>
+
+              <button type="button" class="account__button">
+                <img src="./images/svg/human.svg" alt="Account" />
+              </button>
+
+              <button type="button">
+                <img src="./images/svg/shop.svg" alt="Shop" />
+              </button>
             </div>
-        </header>
-     </div>
-</body>
+
+            <!-- ! ACCOUNT MODAL -->
+
+            <div class="account__modal">
+              <div class="account__modal-content">
+                <button type="button" class="account__close">&times;</button>
+
+                <h2>Log in</h2>
+
+                <form class="account__form">
+                  <input type="email" placeholder="Email" required />
+
+                  <input type="password" placeholder="Password" required />
+
+                  <button type="submit">Log in</button>
+                </form>
+
+                <p>
+                  Don't have an account?
+
+                  <button type="button" class="account__register">
+                    Register
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ! Hero -->
+      <div class="big__container">
+        <section class="hero">
+          <div class="container">
+            <div class="hero__wrapper">
+              <div class="hero__inner">
+                <div class="hero__inner-block-text">
+                  <p class="hero__inner-block-text-subtitle">Good4Me</p>
+                  <h1 class="hero__inner-block-text-title">
+                    MULTI-VITAMIN<br />(3 MONTH SUPPLY)
+                  </h1>
+                  <p class="hero__inner-block-text-description">
+                    Good4Me Apple Cider Vinegar gummies are the newest addition
+                    to your morning health and well-being regime.
+                  </p>
+                  <a href="#" class="hero__inner-block-text-link">Shop Now</a>
+                </div>
+                <img
+                  class="vitamin"
+                  src="./images/img/hero.png"
+                  alt="Vitamin"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <!-- ! MAIN -->
+    <main class="main">
+      <!-- ! Process -->
+      <div class="container">
+        <div class="process__wrapper">
+          <div class="process__inner">
+            <!-- ! Images -->
+            <div class="process__inner-images">
+              <a title="Gluten Free" href="#"
+                ><img
+                  src="./images/img/glutenFree.png"
+                  alt="Gluten Free"
+                  class="process__inner-block-1-images"
+              /></a>
+              <a title="Vegan Friendly" href="#"
+                ><img
+                  src="./images/img/veganFriendly.png"
+                  alt="Vegan Friendly"
+                  class="process__inner-block-1-images"
+              /></a>
+              <a title="No Nasties" href="#"
+                ><img
+                  src="./images/img/noNasties.png"
+                  alt="No Nasties"
+                  class="process__inner-block-1-images"
+              /></a>
+              <a title="Pectinbase" href="#"
+                ><img
+                  src="./images/img/pectinbase.png"
+                  alt="Pectinbase"
+                  class="process__inner-block-1-images"
+              /></a>
+            </div>
+            <!-- ! Title -->
+            <h2 class="process__inner-title">
+              We Have The Main Process to Run The GOOD4ME
+            </h2>
+            <!-- ! Info -->
+            <div class="info__wrapper">
+              <div class="info__inner">
+                <!-- ! 1 -->
+                <div class="info__inner-block">
+                  <img src="./images/svg/quality.svg" alt="Quality Assured">
+                </div>
+                <h3 class="info__inner-title">Quality Assured</h3>
+                <p class="info__inner-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>    
+              </div>
+              <div class="info__inner">
+                <div class="info__inner-block">
+                  <img src="./images/svg/clean.svg" alt="Clean Ingredients">
+                </div>
+                <h3 class="info__inner-title">Clean Ingredients</h3>
+                <p class="info__inner-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+              </div>
+              <div class="info__inner">
+                <div class="info__inner-block">
+                  <img src="./images/svg/chemical.svg" alt="Chemical Free">
+                </div>
+                <h3 class="info__inner-title">Chemical Free</h3>
+                <p class="info__inner-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

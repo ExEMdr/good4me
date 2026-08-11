@@ -8,6 +8,12 @@ a {
     text-decoration: none;
 }
 
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 .active {
     transition: all 0.5s;
 }

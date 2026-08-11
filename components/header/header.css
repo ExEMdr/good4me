@@ -3,7 +3,7 @@
 }
 
 .header__wrapper {
-    padding: 0px 100px;
+    
 }
 
 .header__inner {
@@ -32,11 +32,101 @@ font-size: 18px;
 text-align: left;
 }
 
-.header__search {
-    display: flex;
-    gap: 26px;
-}
-
 .active:hover {
     color: #F6623E;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.search__input {
+    width: 0;
+    min-width: 0;
+    padding: 0;
+    opacity: 0;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.search__wrapper.active .search__input {
+    width: 180px;
+    padding: 8px 10px;
+    opacity: 1;
+    border: 1px solid #ccc;
+}
+
+.account__modal {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+
+    z-index: 1000;
+}
+
+.account__modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.account__modal-content {
+    position: relative;
+
+    width: 400px;
+    padding: 40px;
+
+    background: #fff;
+    border-radius: 10px;
+}
+
+.account__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.account__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.account__form input {
+    padding: 12px;
+}
+
+.account__form button {
+    padding: 12px;
+    cursor: pointer;
+}
+
+.account__register {
+    border: none;
+    background: none;
+    cursor: pointer;
 }
